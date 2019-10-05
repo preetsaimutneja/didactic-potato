@@ -6,8 +6,8 @@ import { promisify } from "util";
 const promisifiedReadFile = promisify(readFile);
 
 program
-    .option("-f, --pathname <path>*", "Path of the file to generate code.")
-    .option("-p, --passphrase <passphrase>*", "The passphrase which should be used.")
+    .option("-f, --pathname <path>", "Path of the file to generate code.")
+    .option("-p, --passphrase <passphrase>", "The passphrase which should be used.")
     .parse(process.argv);
 
 const main = async () => {
